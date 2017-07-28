@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/contact.css"/>
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+        <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+
+        <title>Cellltronics Contact</title>
+    </head>
+    <body>
+
+    <nav style="z-index: 999999999999999999999;" class="nav" id="nav">
+        <div style="top:10px" id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <header id="header_outer">
+        <div class="container">
+            <div class="header_section">
+                <h1 style="margin-top:-10px" class="logo">Cellltronics&reg;</h1>
+            </div>
+    </header>
+    <div style="z-index: 2" class="side-nav">
+
+        <h1 class="large home-go">Home</h1>
+        <h1 class="large products-go">Products</h1>
+        <h1 class="large videos-go">Videos</h1>
+        <h1 class="smaller inside-go">Inside</h1>
+        <h1 class="smaller events-go">Events</h1>
+        <h1 class="smaller contact-go">Contact</h1>
+
+        <div class="side-side-nav">
+
+
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <h1>Phone</h1>
+        <p>678-599-7300</p>
+        <p>770-377-7661</p>
+<br><br>
+        <h1>Follow Us</h1>
+        <div class="contact-img-container">
+
+
+        <a href="https://www.facebook.com/celltronics" target="_blank"><img class="facebook contact-img" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-256.png"/></a>
+        <a href="https://business.google.com/cellltronics" target="_blank"><img class="google contact-img" src="https://maxcdn.icons8.com/Share/icon/color/Logos//google_plus1600.png"/></a>
+        <a href="https://twitter.com/Celltronics_ga" target="_blank"><img class="twitter contact-img" src="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697029-twitter-512.png"/></a>
+        <a href="https://www.youtube.com/channel/UCaPZ0mQaQ4l-WapMWbM8oIA" target="_blank"><img class="youtube contact-img" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-512.png"/></a>
+        </div>
+        </div>
+    <script>
+        $(document).ready(function(){
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+                $(this).toggleClass('open');
+            });
+
+        });
+
+        $(".nav").click(function(){
+            $("#nav-icon1 span, #nav-icon3 span, #nav-icon4 span").toggleClass("change-nav-color2");
+
+            $(".logo").toggleClass("changeColor");
+            $(".side-nav").toggleClass("side-nav-width")
+            $(".side-side-nav").toggleClass("side-side-nav-width");
+
+        });
+
+        $(".home-go").click(function(){
+            window.location.href = "/";
+        });
+        $(".products-go").click(function(){
+            window.location.href = "/products";
+        });
+        $(".videos-go").click(function(){
+            window.location.href = "/videos";
+        });
+        $(".inside-go").click(function(){
+            window.location.href = "/inside";
+        });
+        $(".events-go").click(function(){
+            window.location.href = "/events";
+        });
+        $(".contact-go").click(function(){
+            window.location.href = "/contact";
+        });
+    </script>
+    </body>
+</html>
